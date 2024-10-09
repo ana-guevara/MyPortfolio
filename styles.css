@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
 }
 
 body {
-    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); /* Purple gradient */
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); 
     color: #333;
 }
 
@@ -16,7 +16,42 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 0;
+}
 
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; 
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .job {
+        padding: 15px; 
+    }
+
+    .details-container {
+        width: 100%; 
+        height: auto;
+    }
+
+    .project-img {
+        height: 150px; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
 }
 
 a {
@@ -178,16 +213,16 @@ footer {
 #projects {
     position: relative;
     padding: 60px 0;
-    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); /* Matching purple gradient */
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
     text-align: center;
 }
 
 .color-container {
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250); /* Light background for project card */
+    background: rgb(250, 250, 250); 
     border-radius: 2rem;
     padding: 1.5rem;
-    border: rgb(53, 53, 53) 0.1rem solid; /* Subtle border */
+    border: rgb(53, 53, 53) 0.1rem solid; 
     transition: transform 0.3s ease;
 }
 
@@ -200,27 +235,27 @@ footer {
 .experience-details-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5rem; /* Reduced space between projects */
-    justify-items: center; /* Center items horizontally */
-    margin-top: 30px; /* Reduced margin from top */
+    gap: 0.5rem; 
+    justify-items: center;
+    margin-top: 30px; 
 }
 
 
 
 /* Individual Project Styles */
 .details-container {
-    background-color: rgb(250, 250, 250); /* Light background for projects */
+    background-color: rgb(250, 250, 250);
     padding: 1.5rem;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    width: 300px; /* Fixed width for equal-sized cards */
-    height: 450px; /* Fixed height to ensure consistent alignment */
+    width: 300px; 
+    height: 450px; 
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures button stays at the bottom */
+    justify-content: space-between; 
 }
 
 .details-container:hover {
@@ -231,7 +266,7 @@ footer {
 .project-img {
     border-radius: 2rem;
     width: 100%;
-    height: 200px; /* Fixed height to avoid cutting off images */
+    height: 200px; 
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -270,20 +305,19 @@ footer {
 }
 
 .job {
-    background-color: #f9f9f9; /* Light background for contrast */
-    border: 1px solid #ddd; /* Subtle border */
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 15px; /* Space between job listings */
+    margin-bottom: 15px; 
 }
 
 .job h3 {
-    margin: 0 0 10px; /* Space below job title */
-    font-size: 1.5em; /* Slightly larger font for job title */
+    margin: 0 0 10px; 
+    font-size: 1.5em; 
 }
 
 .job p {
-    font-style: italic; /* Italic style for the job duration */
-    margin: 0 0 10px; /* Space below the date */
+    font-style: italic; 
+    margin: 0 0 10px; 
 }
-
