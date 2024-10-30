@@ -114,7 +114,7 @@ nav ul li a:hover {
 .profile-pic {
     width: 150px;
     height: 150px;
-    background: url('photos/ana_photo.jpg') no-repeat center/cover;
+    background: url('photos/ana_photo.JPG') no-repeat center/cover;
     border-radius: 50%;
     margin: 20px auto 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
